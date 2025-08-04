@@ -1,11 +1,11 @@
 # Ruta de los scripts Python
-$transferScript = "C:\Mondayapp\comprasdcm\transfercdcm.py"
-$syncScript = "C:\Mondayapp\comprasdcm\sync_scriptcdcm.py"
+$transferScript = "C:\FastAPI\comprasdcm\transfercdcm.py"
+$syncScript = "C:\FastAPI\comprasdcm\sync_scriptcdcm.py"
 $logFile = "C:\Logs\comprascdcm.log"
-$transferOut = "C:\Logs\transfercdcm_salida.log"
-$transferErr = "C:\Logs\transfercdcm_error.log"
-$syncOut = "C:\Logs\synccdcm_salida.log"
-$syncErr = "C:\Logs\synccdcm_error.log"
+$transferOut = "C:\Logs\transfer_salidacdcm.log"
+$transferErr = "C:\Logs\transfer_errorcdcm.log"
+$syncOut = "C:\Logs\sync_salidacdcm.log"
+$syncErr = "C:\Logs\sync_errorcdcm.log"
 
 # Ruta completa a python.exe (ajusta si usas entorno virtual)
 $pythonPath = "python.exe"
