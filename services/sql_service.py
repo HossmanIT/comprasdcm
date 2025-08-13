@@ -10,7 +10,7 @@ class SQLService:
     def __init__(self, db: Session):
         self.db = db
     
-    def get_recent_purchases(self, days_back: int = 60) -> List[SQLCOMPC02]:
+    def get_recent_purchases(self, days_back: int = 90) -> List[SQLCOMPC02]:
         """Obtiene las facturas de los últimos N días que no han sido sincronizadas"""
         end_date = datetime.now()
         start_date = end_date - timedelta(days=days_back)

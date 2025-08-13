@@ -8,9 +8,8 @@ def exportar_registros():
     try:
         # 1. Cargar configuraciones
         configs = load_configurations()
-        
         # Obtener días a transferir desde variable de entorno (por defecto: 30)
-        dias_atras = int(os.getenv("DIAS_A_TRANSFERIR", 30))
+        dias_atras = int(os.getenv("DIAS_A_TRANSFERIR", 90))
         fecha_actual = datetime.now().date()
         fecha_inicio = fecha_actual - timedelta(days=dias_atras)
         print(f"\nBuscando registros desde {fecha_inicio} hasta {fecha_actual}")
